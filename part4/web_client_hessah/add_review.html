@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -23,4 +23,49 @@
   <script src="scripts.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Review</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="hello-kitty-icon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Hello Kitty Hotel Logo" class="logo" />
+    <nav>
+      <a href="index.html" class="login-button">Home</a>
+    </nav>
+  </header>
 
+  <main>
+    <form id="review-form" class="add-review">
+      <h2>Add a Review</h2>
+
+      <label for="review">Your Review:</label>
+      <textarea id="review" name="review" required></textarea>
+
+      <label for="rating">Rating:</label>
+      <select id="rating" name="rating" required>
+        <option value="" disabled selected>Choose rating</option>
+        <option value="1">⭐ (1)</option>
+        <option value="2">⭐⭐ (2)</option>
+        <option value="3">⭐⭐⭐ (3)</option>
+        <option value="4">⭐⭐⭐⭐ (4)</option>
+        <option value="5">⭐⭐⭐⭐⭐ (5)</option>
+      </select>
+
+      <button type="submit">Submit Review</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
