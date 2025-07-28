@@ -273,6 +273,11 @@ function createAddReviewButton(placeId) {
   container.appendChild(button);
 }
 
+const placeId = getPlaceIdFromURL(); 
+fetchPlaceDetails(token, placeId);  
+
+// After successful fetch:
+createAddReviewButton(placeId);
 
 
 
