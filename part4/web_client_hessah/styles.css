@@ -127,6 +127,20 @@ form select {
   margin: 20px;
 }
 
+.details-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #003366;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.details-button:hover {
+  background-color: #0055aa;
+}
+
+
 /* Filter Dropdown */
 #price-filter {
   padding: 8px;
