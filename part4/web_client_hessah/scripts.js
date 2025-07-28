@@ -256,6 +256,26 @@ function setupReviewSubmission(placeId) {
     });
 }
 
+
+
+
+function createAddReviewButton(placeId) {
+  const container = document.getElementById('add-review-button-container');
+  if (!container) return;
+
+  const token = getCookie('token');
+  if (!token) return; // only show if logged in
+
+  const button = document.createElement('a');
+  button.href = `add_review.html?place_id=${placeId}`;
+  button.textContent = 'Write a Review';
+  button.className = 'details-button'; // style this in your CSS
+  container.appendChild(button);
+}
+
+
+
+
 // ---------------------------------------------
 // Task 4: Add Review Page (add_review.html)
 // ---------------------------------------------
